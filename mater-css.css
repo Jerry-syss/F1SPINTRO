@@ -1,0 +1,46 @@
+body
+{
+  min-width:600px;
+  max-width:960px;
+  background-image:linear-gradient(to right,#845ec2,#d65db1,#ff6f91,#ff9671,#ffc75f,#f9f871);
+}
+header
+{
+  background-color:white;
+  width:100%;
+  height:1.2cm;
+  border-radius:7px;
+  font-family: sans-serif;
+  opacity:0.8;
+}
+main
+{
+  background-color: white;
+  width: 78%;
+  height:50cm;
+  border-radius:7px;
+  font-family: Sans-Serif;
+  background-image:linear-gradient(to bottom,#845ec2,#d65db1,#ff6f91,#ff9671,#ffc75f,#f9f871);
+}
+aside
+{
+  background-color: white;
+  width: 20%;
+  height: 50cm;
+  border-radius: 7px;
+  font-family: Sans-Serif;
+}
+#div
+{
+   display: flex;
+   gap: 5px; /* 在 main 和 aside 之间创建间距 */
+   margin: 0 auto; /* 居中容器 */
+}
+h3
+{
+  color:skyblue;
+}
+h2
+{
+  color:orange;
+}
