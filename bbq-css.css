@@ -1,1 +1,40 @@
-
+body
+{
+  min-width:600px;
+  max-width:3000px;
+  background-image: url("bbq-place.webp");
+  background-size: cover;
+}
+header
+{
+  background-color:white;
+  width:100%;
+  height:1.2cm;
+  border-radius:7px;
+  font-family: sans-serif;
+  opacity:0.8;
+}
+main
+{
+  width: 50%;
+  height:50cm;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius:7px;
+  font-family: Sans-Serif;
+  background-image:linear-gradient(to bottom, rgba(132, 94, 194, 0.9), rgba(214, 93, 177, 0.9), rgba(255, 111, 145, 0.9), rgba(255, 150, 113, 0.9), rgba(255, 199, 95, 0.9), rgba(249, 248, 113, 0.9));
+}
+aside
+{
+  width: 48%;
+  height: 50cm;
+  border-radius: 7px;
+  font-family: Sans-Serif;
+  background-image:linear-gradient(to bottom, rgba(132, 94, 194, 0.9), rgba(214, 93, 177, 0.9), rgba(255, 111, 145, 0.9), rgba(255, 150, 113, 0.9), rgba(255, 199, 95, 0.9), rgba(249, 248, 113, 0.9));
+}
+#div
+{
+   display: flex;
+   gap: 5px; /* 在 main 和 aside 之间创建间距 */
+   margin: 0 auto; /* 居中容器 */
+}
