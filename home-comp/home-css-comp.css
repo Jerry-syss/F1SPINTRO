@@ -17,10 +17,16 @@ button
     width: 15cm;
     height: 1.2cm;
     font-family: sans-serif;
+    transition: background-color 0.6s ease;
 }
 button:hover
 {
-    background-color: aliceblue;
+    background-color: skyblue;
+}
+button:active
+{
+    background-color: #00ABCF;
+    color:white;
 }
 img
 {

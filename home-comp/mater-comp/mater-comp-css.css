@@ -1,0 +1,45 @@
+body
+{
+    background-image: linear-gradient(to right,#845ec2,#d65db1,#ff6f91,#ff9671,#ffc75f,#f9f871);
+}
+header
+{
+    background-color: white;
+    width: 100%;
+    border-radius: 7px;
+    height: 1.2cm;
+    font-family: sans-serif;
+    font-size: 160%;
+    /*Gemini Start*/
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; /* Vertically centers the text */
+    /*End*/
+    #time
+    {
+        font-family: sans-serif;
+        margin-right: 15px;
+    }
+    #header_title
+    {
+        margin-left: 15px;
+    }
+}
+#sidebar
+{
+    display: inline;
+    width: 2.5cm;
+    height: 10cm;
+    background-color: white;
+    position: fixed;
+}
+aside
+{
+    display: inline;
+}
+main
+{
+    display: inline;
+    margin-left: 200px; /* This pushes the main content to the right of the sidebar */
+  padding: 20px;
+}
