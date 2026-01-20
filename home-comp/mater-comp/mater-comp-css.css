@@ -1,10 +1,10 @@
-/*body start*/
+/*body start*\/
 body
 {
     background-image: linear-gradient(to right,#845ec2,#d65db1,#ff6f91,#ff9671,#ffc75f,#f9f871);
 }
-/*body end*/
-/*header start*/
+/*body end*\/
+/*header start*\/
 header
 {
     background-color: white;
@@ -13,11 +13,11 @@ header
     height: 1.4cm;
     font-family: sans-serif;
     font-size: 160%;
-    /*Gemini Start*/
+    /*Gemini Start*\/
     display: flex;
     justify-content: space-between; 
     align-items: center; /* Vertically centers the text */
-    /*End*/  
+    /*End*\/  
     
 }
 #time
@@ -30,25 +30,27 @@ header
     margin-left: 15px;
 }
 /*header end*/
-/*siderbar start*/
+/*siderbar start*\/
 #sidebar
 {
     display: inline;
     width: 2cm;
-    height: 15cm;
+    height: 445.4px;
     background-color: white;
     position: fixed;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-radius: 5px;
     margin-left: 0;
 }
 button
 {
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-radius: 5px;
     background-color: white;
     border-width: 0.1px;
     transition: background-color 0.6s ease;
+    width: 2cm;
+    height: 2cm;
+    font-family: sans-serif;
+    font-size: 110%;
 }
 button:hover
 {
@@ -63,39 +65,28 @@ button:active
 {
    top: 95px;
    position: fixed;
-   width: 2cm;
-   height: 2cm;
-   font-family: Sans-Serif;
-   font-size: 110%;
 }
 #BBQ
 {
    top: 180.6px;
    position: fixed;
-   width: 2cm;
-   height: 2cm;
-   font-family: Sans-Serif;
-   font-size: 110%;
 }
 #money
 {
    top: 266.2px;
    position: fixed;
-   width: 2cm;
-   height: 2cm;
-   font-family: Sans-Serif;
-   font-size: 110%;
 }
-#URL_mater
+#calc
 {
-   top: 351.8px;
-   position: fixed;
-   width: 2cm;
-   height: 2cm;
-   font-family: Sans-Serif;
-   font-size: 110%;
+    top: 351.8px;
+    position: fixed;
 }
-/*siderbar end*/
+#help
+{
+   top: 437.4px;
+   position: fixed;
+}
+/*siderbar end*\/
 aside
 {
     display: inline;
@@ -103,7 +94,92 @@ aside
 main
 {
     display: inline;
-    margin-left: 200px; /* This pushes the main content to the right of the sidebar */
+    margin-left: 200px; /* This pushes the main content to the right of the sidebar *\/
     padding: 20px;
 }
+/* --- 你的原本代碼 --- */
+body {
+    background-image: linear-gradient(to right, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+    margin: 0; /* 清除瀏覽器預設邊距 */
+}
 
+header {
+    background-color: white;
+    width: 100%;
+    border-radius: 7px;
+    height: 1.4cm;
+    font-family: sans-serif;
+    font-size: 160%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#header_title { margin-left: 15px; }
+#time { font-family: sans-serif; margin-right: 15px; }
+
+#sidebar {
+    width: 2cm;
+    height: 445.4px;
+    background-color: white;
+    position: fixed;
+    border-radius: 5px;
+    top: 95px; /* 讓側邊欄對齊第一個按鈕的高度 */
+}
+
+/* --- 按鈕樣式 --- */
+button {
+    border-radius: 5px;
+    background-color: white;
+    border: 0.1px solid #ccc;
+    transition: background-color 0.6s ease;
+    width: 2cm;
+    height: 2cm;
+    font-family: sans-serif;
+    font-size: 110%;
+    cursor: pointer;
+    position: fixed; /* 繼承你原本的固定定位 */
+}
+
+button:hover { background-color: skyblue; }
+button:active { background-color: #00ABCF; color: white; }
+
+/* 各個按鈕的高度位置 */
+#home { top: 95px; }
+#BBQ { top: 180.6px; }
+#money { top: 266.2px; }
+#calc { top: 351.8px; }
+#help { top: 437.4px; }
+
+/* --- 新增：彈出框 (Tooltip) 樣式 --- */
+.tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    
+    /* 定位在按鈕右側 */
+    position: absolute;
+    left: 105%; 
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none; /* 防止滑鼠干擾 */
+}
+
+/* 滑鼠移上去按鈕時，顯示內部的 .tooltip */
+button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+main {
+    margin-left: 120px; /* 留出空間給側邊欄 */
+    padding: 20px;
+    color: white;
+}
