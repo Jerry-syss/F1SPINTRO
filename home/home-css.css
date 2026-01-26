@@ -10,13 +10,10 @@ h1
 button
 {
     background-color: white;
-    border-radius: 7px;
+    border-radius: 5px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    min-width: 850px;
-    max-width: 900px;
     font-family: sans-serif;
     transition: background-color 0.6s ease;
 }
@@ -35,24 +32,30 @@ img
     margin-left: auto;
     margin-right: auto;
 }
-@media screen and (max-width:7cm) {
-    .words
+@media screen and (max-width: 500px)
+{
+    button
     {
-        font-size: 200%;
-        height: 1.8cm;
-    }
-}
-@media screen and (min-width:10cm) and (max-width:16cm) {
-    .words
-    {
-        font-size: 180%;
-        height: 1.5cm;
-    }
-}
-@media screen and (min-width:16.1cm) {
-    .words
-    {
-        font-size: 150%;
+        width: 96%;
         height: 1.2cm;
+        font-size: 120%;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 1024px)
+{
+    button
+    {
+        width: 85%;
+        height: 1.3cm;
+        font-size: 120%;
+    }
+}
+@media screen and (min-width: 1025px)
+{
+    button
+    {
+        width: 50%;
+        height: 1.2cm;
+        font-size: 95%;
     }
 }

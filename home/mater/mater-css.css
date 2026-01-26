@@ -1,0 +1,16 @@
+body
+{
+    background-image:linear-gradient(to right,#845ec2,#d65db1,#ff6f91,#ff9671,#ffc75f,#f9f871);
+}
+#header_all
+{
+    display: grid;
+    gap: 1px;    /* 图片之间的间距 */
+    grid-template-columns: 1fr 1fr; /* 默认：手机端 1 列 */
+}
+img
+{
+    display: block;
+    width: 10cm;
+    height: 10cm;
+}
