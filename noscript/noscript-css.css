@@ -1,14 +1,21 @@
-h1
-{
+h1 {
     text-align: center;
     font-family: sans-serif;
 }
-body
-{
-    background-image:linear-gradient(to right,#845ec2,#d65db1,#ff6f91,#ff9671,#ffc75f,#f9f871);
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #2d3436;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-img
-{
+
+img {
     text-align: center;
     display: block;
     margin-left: auto;
@@ -17,27 +24,35 @@ img
     width: 13cm;
     height: 13cm;
 }
-button
-{
+
+button {
     background-color: white;
     transition: background-color 0.6s ease;
     border:0.1;
 }
-button:hover
-{
+
+button:hover {
     background-color: skyblue;
 }
-button:active
-{
+
+button:active {
     background-color: #00ABCF;
     color:white;
 }
-.two
-{
+
+.two {
     width: 500px;
     height: 1cm;
     border-radius: 7px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #003366;
+    font-size: 150%;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
